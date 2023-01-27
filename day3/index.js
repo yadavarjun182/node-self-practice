@@ -26,11 +26,20 @@ fs.appendFile("./myfile.txt", "some more text added afterwards", (err) => {
 
 })
 
+fs.writeFile("./myfile2.txt", "well this this file i wrote using module fs\n", (err) => {
+    if (err) {
+        console.log("some mistake error ")
+        console.log(err)
+    }
+    else
+        console.log("done")
+}
+)
 
-// fs.unlink("./myfile.txt", (err) => {
-//     if (err)
-//         console.log("difficulty in deleting")
-//     else
-//         console.log("deleted successfully")
+fs.unlink("./myfile2.txt", (err) => {
+    if (err)
+        console.log("difficulty in deleting")
+    else
+        console.log("deleted successfully")
 
-// })
+})
