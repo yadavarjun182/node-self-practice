@@ -18,6 +18,22 @@ const mywrite = (websitename) => {
     })
 }
 
+const mywrite2 = (websitename) => {
+    dns.lookup(websitename, (err, address, family) => {
+        if (err)
+            console.log("err", err)
+        else {
+            const mydata = `${websitename} | ${address} | IPv${family}\n`
+            fs.appendFile("./data.txt", mydata, (err, data) => {
+                if (err)
+                    console.log("err", err)
+                else
+                    console.log("file updated successfully")
+            })
+        }
+    })
+}
+
 
 const myread = (filename) => {
     fs.readFile("./data.txt", "utf-8", (err, data) => {
