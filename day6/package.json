@@ -1,0 +1,24 @@
+{
+  "name": "self-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadavarjun182/node-self-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yadavarjun182/node-self-practice/issues"
+  },
+  "homepage": "https://github.com/yadavarjun182/node-self-practice#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
