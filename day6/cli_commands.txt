@@ -1,0 +1,22 @@
+Practising CLI commands
+
+1. ls             :-   listing directory
+2. ls -al         :-  formatted listing with hidden commands
+3. ls -lt         :-  sorting the formatted listing by time modification
+4. cd dir         :-  change the directory to dir
+5. cd             :-  change to home directory
+6. pwd            :-  show current working directory
+7. mkdir dir      :-  creating a directory dir
+8. cat >file      :-  Places the standard input into the file
+9. more file      :-  Output the contents of the file
+10. head file     :-  Output the first 10 lines of the file
+11. tail file     :-  Output the last 10 lines of the code
+12. tail -f file  :-  Output the contents of file as it grows, starting with last 10 lines
+13. touch file    :-  Create or update file
+14. rm file       :-  Deleting the file
+15. rm -r dir     :-  Deleting the directory
+16. rm -f file    :-  force to remove the file
+17. rm -rf dir    :-  force to remove the directory dir
+18. cp file1 file2:-  copy the contents of file1 to file2
+19. cp -r dir1 dir2:- copy dir1 to dir2; create dir2 if not present
+20. mv file1 file2 :- rename or move file1 to file2, if file2 is an existing directory
