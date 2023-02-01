@@ -1,0 +1,5 @@
+readfile2
+this this the second file in this series
+this file contains the appended data 
+ i  am an append text file2
+ i  am an append text file2
