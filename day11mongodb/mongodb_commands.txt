@@ -1,3 +1,5 @@
 show dbs
 drop database
 use database
+
+db.dropDatabase()
