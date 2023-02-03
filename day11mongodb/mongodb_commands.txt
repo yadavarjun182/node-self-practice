@@ -11,3 +11,4 @@ db.mystudentscollection.insertMany([{name:"aarav",age:18},{name:"davra",age:19}]
 
 show collections
 db.mystudentscollection.find()
+db.mystudentscollection.drop()
