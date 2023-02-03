@@ -3,3 +3,4 @@ drop database
 use database
 
 db.dropDatabase()
+db.createCollection(mystudentscollection)
