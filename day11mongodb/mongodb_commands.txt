@@ -4,3 +4,4 @@ use database
 
 db.dropDatabase()
 db.createCollection(mystudentscollection)
+db.mystudentscollection.insert({name:"arjun",age:22})
