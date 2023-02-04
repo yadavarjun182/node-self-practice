@@ -13,6 +13,9 @@ res.send("data has been accepted")
 app.get("/details", (req,res)=>{
 res.send("All details so far...")
 })
+
+
+//listening on port 4500
 app.listen(4500,()=>{
 console.log("running on port 4500")
 })
