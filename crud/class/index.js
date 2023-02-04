@@ -5,6 +5,8 @@ app.use(express.json()) //this will parse the data in the req.body and you will 
 app.get("/", (req,res)=>{
 res.send("Hello")
 })
+
+//to post at adddetails
 app.post("/adddetails",(req,res)=>{
 console.log(req.body)
 res.send("data has been accepted")
@@ -13,6 +15,7 @@ res.send("data has been accepted")
 app.get("/details", (req,res)=>{
 res.send("All details so far...")
 })
+
 
 
 //listening on port 4500
