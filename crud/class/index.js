@@ -19,6 +19,12 @@ res.send("All details so far...")
 })
 
 
+if(req.url==="/adddata" && req.method==="POST"){
+    //some logic to get the payload sent by client.
+    res.end("Data has been recorded");
+    }
+    
+
 
 //listening on port 4500
 app.listen(4500,()=>{
