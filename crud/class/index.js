@@ -1,4 +1,6 @@
 const express=require("express")
+// importing express with CJS method using require keyword
+
 const app=express()
 //this is a middleware we will see these in detail in the upcoming session
 app.use(express.json()) //this will parse the data in the req.body and you will be able to get it as well and console.log() it
