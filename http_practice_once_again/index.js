@@ -11,6 +11,9 @@ const server = http.createServer((req, res) => {
     else if (req.url == "/data") {
         res.end("all data.......................")
     }
+    else {
+        res.end("bad request")
+    }
 })
 
 server.listen(`${PORT}`, () => {
