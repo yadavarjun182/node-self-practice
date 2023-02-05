@@ -1,0 +1,2 @@
+hi I am arjun. practicing http server 
+and this is a dummy file to provide in response as a response to a request

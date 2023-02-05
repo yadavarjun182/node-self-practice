@@ -1,6 +1,11 @@
 //creating  different responses for different requests
 const http = require("http")
+const fs = require("fs")
 const PORT = 8000
+
+
+
+
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
         res.end("Hello Welcome to Homepage")
@@ -9,7 +14,15 @@ const server = http.createServer((req, res) => {
         res.end("Here are all the reports generated so far")
     }
     else if (req.url == "/data") {
-        res.end("all data.......................")
+        fs.readFile("./text.txt", "utf-8", (err, data) => {
+            if (err) {
+                res.write("no data present")
+                res.end(err)
+            } else {
+                res.end(data)
+            }
+
+        })
     }
     else {
         res.end("bad request")
