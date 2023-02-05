@@ -8,6 +8,7 @@ const PORT = 8000
 
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
+        res.setHeader("Content-Type", "text/html") //header to specify the res is in html form
         res.end("Hello Welcome to Homepage")
     }
     else if (req.url == '/reports') {
