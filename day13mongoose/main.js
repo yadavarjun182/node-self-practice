@@ -3,7 +3,18 @@ const mongoose = require("mongoose");
 const main = async () => {
     const connection = await mongoose.connect("mongodb://127.0.0.1:27017/backend")
     console.log("connected to mongo")
-    await StudentModel.insertMany([{ name: "arjun", age: 26, city: "pune" }])
+    // await StudentModel.insertMany([{ name: "arjun", age: 26, city: "pune" }])
+
+
+    const student = new StudentModel(
+        {
+            name: "arnab",
+            age: 26,
+            city: "pune"
+        })
+
+    await student.save()
+
     connection.disconnect()
     console.log("disconnected")
 }
