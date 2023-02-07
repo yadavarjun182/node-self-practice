@@ -12,9 +12,11 @@ const main = async () => {
             age: 26,
             city: "pune"
         })
-
     await student.save()
 
+
+    const data=await StudentModel.find()
+    console.log(data)
     connection.disconnect()
     console.log("disconnected")
 }
